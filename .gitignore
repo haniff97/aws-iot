@@ -1,0 +1,18 @@
+*.pem
+
+# Ignore all markdown files except readme.md
+*.md
+!readme.md
+!README.md
+
+# Terraform state and credentials (protect against secret leaks)
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# OS artifacts
+.DS_Store
+
+# Lambda zip archives
+lambda/*.zip
